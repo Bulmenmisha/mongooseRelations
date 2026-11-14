@@ -1,0 +1,16 @@
+{
+  "name": "hw13-mongoose-relations",
+  "version": "1.0.0",
+  "description": "ДЗ 13: Mongoose, схемы и связи (один ко многим, многие ко многим)",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.0"
+  }
+}

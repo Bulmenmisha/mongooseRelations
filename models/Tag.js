@@ -1,0 +1,11 @@
+import mongoose from 'mongoose';
+
+// Тег: многие ко многим со статьями — хранит массив ссылок на статьи
+const tagSchema = new mongoose.Schema({
+  name: { type: String, required: true, unique: true },
+  articles: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Article' }],
+});
+
+const Tag = mongoose.model('Tag', tagSchema);
+
+export default Tag;
